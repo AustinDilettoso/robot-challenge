@@ -1,0 +1,33 @@
+# NOTE - END command added to allow application to finish
+# demonstates standard moving and placing
+PLACE 0,0,NORTH
+MOVE
+RIGHT
+MOVE
+REPORT
+END
+
+# demonstrates mutliple robots being placed AND moving specific robots AND reporting multiple robots
+PLACE 0,0,NORTH
+PLACE 1,1,EAST
+PLACE 2,2,WEST
+PLACE 3,3,SOUTH
+ROBOT 4 MOVE
+REPORT
+END
+
+# demonstrate robots not falling off the edge
+PLACE 0,0,WEST
+MOVE
+REPORT
+END
+
+# demonstrates rotating robots
+PLACE 0,0,NORTH
+RIGHT
+RIGHT
+REPORT
+LEFT
+LEFT
+REPORT
+END
