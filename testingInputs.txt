@@ -31,3 +31,23 @@ LEFT
 LEFT
 REPORT
 END
+
+# demonstrates PLACE needing to be the first command and needing the right syntax
+MOVE
+PLACE 6,2,NORTH
+PLACE 2 ,2,NORTH
+PLAC 2,2,NORTH
+PLACE 2,2,NORT
+
+# demonstrates handling calling a non-existent robot
+PLACE 0,0,NORTH
+ROBOT 2 MOVE
+
+# demonstrates needing the right syntax for MOVE, LEFT, RIGHT, REPORT
+MOV
+LEF
+RIGH
+REP
+
+# This should cover every case detailed in the challege description
+END
